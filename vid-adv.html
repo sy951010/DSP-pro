@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>视频广告</title>
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="extend/css/base.css">
+	<link rel="stylesheet" href="extend/css/animate.css">
+	<link rel="stylesheet" href="css/vid-adv.css">
+</head>
+<body>
+	<!-- 这是头部 -->
+	<div class="banner">
+		<img src="img/index/ban-bg2.png" alt="">
+		<!-- 头部列表 -->
+		<div class="ban-list">
+			<div class="fl now-date">
+				<img src="img/index/date-img.png" alt="">
+				<p id="date"><span>2015</span>年<span>6</span>月<span>18</span>日</p>
+			</div>
+			<ul class="fr">
+				<li><a href="DSP-intro.html">51DSP介绍</a></li>
+				<li><a href="vid-adv.html" class="active">视频广告</a></li>
+				<li><a href="mobile-adv.html">移动端广告</a></li>
+				<li><a href="out-pro.html">外包项目</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="tel-us.html" >联系方式</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<!-- middle -->
+	<div class="middle">
+		<div class="center-box mid-box">
+			<h1>为广告主搭建庞大视频媒体组合</h1>
+			<p>可覆盖中国<span>85%</span>网民，每天广告投放量可达<span>5亿</span>次曝光 !
+			</p>
+			<img src="img/vid-adv/vid-adv-bg.png" alt="">
+			<table>
+				<tr>
+					<td><img src="img/vid-adv/56.png" alt=""></td>
+					<td><img src="img/vid-adv/aiqiyi.png" alt=""></td>
+				</tr>
+				<tr>
+					<td><img src="img/vid-adv/boom.png" alt=""></td>
+					<td><img src="img/vid-adv/cntv.png" alt=""></td>
+				</tr>
+				<tr>
+					<td><img src="img/vid-adv/fengxing.png" alt=""></td>
+					<td><img src="img/vid-adv/ku6.png" alt=""></td>
+				</tr>
+				<tr>
+					<td><img src="img/vid-adv/m1905.png" alt=""></td>
+					<td><img src="img/vid-adv/pptv.png" alt=""></td>
+				</tr>
+				
+			</table>
+			<table>
+				<tr>
+					<td><img src="img/vid-adv/souhu.png" alt=""></td>
+					<td><img src="img/vid-adv/tecent.png" alt=""></td>
+				</tr>
+				<tr>
+					<td><img src="img/vid-adv/tudou.png" alt=""></td>
+					<td><img src="img/vid-adv/uusee.png" alt=""></td>
+				</tr>
+				<tr>
+					<td><img src="img/vid-adv/xunlei.png" alt=""></td>
+					<td><img src="img/vid-adv/youku.png" alt=""></td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+	<!-- bottom -->
+	<div class="bottom">
+		
+		<div class="center-box bot-box">
+			<div class="ssj"></div>
+			<ul class="clearfix">
+				<li><img src="img/vid-adv/leshi-phone.png" alt=""></li>
+				<li><img src="img/vid-adv/toudou-phone.png" alt=""></li>
+				<li><img src="img/vid-adv/youku-phone.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 这是页脚 -->
+	<div class="footer">
+		<p>京ICP备09083201号 京ICP证070419号  京公网安备:11010502026763</p>
+		<p>Copyright&copy;2015 51dsp.com All Rights Reserved</p>
+	</div>
+	<!-- 这是侧边栏 -->
+	<div class="turn-on" id="btn">
+		<i class="iconfont icon-arrow-right"></i>
+	</div>
+	<div class="left-box">
+		<a href="tel-us.html"><span>咨询留言</span>
+		<div class="shangsanjiao"></div></a>
+	</div>
+
+	<script type=text/javascript src="extend/js/jquery.min-1.9.1.js"></script>
+	<script type=text/javascript src="extend/js/jquery.easing.min.js"></script>
+	<script type=text/javascript src="js/general.js"></script>
+	<script>
+		$(".bot-box img").mouseover(function(event) {
+			var x = $(".bot-box img").index($(this));
+			$(this).addClass('animated swing');
+			setTimeout(function(){$(".bot-box img").eq(x).removeClass('animated swing');},1000);
+		});
+	</script>
+</body>
+</html>
